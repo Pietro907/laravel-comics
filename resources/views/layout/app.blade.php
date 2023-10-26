@@ -38,8 +38,8 @@ Per oggi dovete fare la pagina con l'elenco dei fumetti e NON la pagina del sing
 
 
 
-@include('partial.main');
-@include('partial.footer');
+
+
 
 ?>
 
@@ -57,6 +57,7 @@ Per oggi dovete fare la pagina con l'elenco dei fumetti e NON la pagina del sing
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
+    \
 
 </head>
 
@@ -66,8 +67,14 @@ Per oggi dovete fare la pagina con l'elenco dei fumetti e NON la pagina del sing
     <header>
         @include ('partial.header');
     </header>
-    
 
+    <main>
+        @include('partial.main');
+    </main>
+
+    <footer>
+        @include('partial.footer');
+    </footer>
 
 
 

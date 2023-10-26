@@ -17,9 +17,3 @@ Route::get('/', function () {
     return view('layout.app');
 });
 
-Route::get('/', function () {
-    $nome = 'Pietro';
-    $image = './resources/img/dc-logo.png';
-    $arrayLink = ['']
-    return view('partial.header', compact('nome', 'image'));
-});
