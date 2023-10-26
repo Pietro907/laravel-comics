@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /* 
 
@@ -38,28 +38,39 @@ Per oggi dovete fare la pagina con l'elenco dei fumetti e NON la pagina del sing
 
 
 
+@include('partial.main');
+@include('partial.footer');
 
 ?>
 
 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <title>Laravel</title>
 
-       
-    </head>
-    <body class="antialiased">
-        
-    <h1>Ciao</h1>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+
+
+</head>
+
+<body class="antialiased">
+
+
+    <header>
+        @include ('partial.header');
+    </header>
     
-   
-    </body>
+
+
+
+
+</body>
+
 </html>
