@@ -37,6 +37,15 @@ Per oggi dovete fare la pagina con l'elenco dei fumetti e NON la pagina del sing
 
 
 
+$nome = 'Pietro';
+$image = './resources/img/dc-logo.png';
+$arrayBooks = ['https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300',  'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300', 'https://picsum.photos/200/300',];
+$arrayBooksTitles = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
+
+
+
+
+
 
 
 
@@ -57,21 +66,115 @@ Per oggi dovete fare la pagina con l'elenco dei fumetti e NON la pagina del sing
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
+    <!-- Style -->
+    @vite('resources/js/app.js')
+
 </head>
 
 <body class="antialiased">
 
 
     <header>
-        @include ('partial.header');
+        @include ('partials.header')
     </header>
 
     <main>
-        @include('partial.main');
+
+        <div class="current_series"><b>CURRENT SERIES</b></div>
+
+        <section>
+
+            <div class="content img_jumbo">
+
+                <!-- img background -->
+
+            </div>
+
+        </section>
+
+        <div class="container_main">
+
+            <!-- Content goes here -->
+            <div class="container_content">
+
+                <div class="row">
+
+                    <!-- mian content fumetti -->
+                    @foreach ($arrayBooksTitles as $book)
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://picsum.photos/200/300" alt="">
+                            <h5>{{$book}}</h5>
+                        </div>
+                    </div>
+                    @endforeach
+
+
+
+                </div>
+
+            </div>
+
+            <div class="container_foot">
+
+                <div class="row jst_btwn">
+
+                    <!-- Button load more -->
+                    <div class="col none_bg_img jst_ctr">
+
+                        <div class="sing_up">
+
+                            <button class="color" type="button"><b>LOAD MORE</b></button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Books loop -->
+        <section>
+
+            <div class="col-2">
+
+                <div class="card">
+                    <img class="img_book" :src="image" :alt="title">
+
+                    <h6>title </h6>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="jumbo">
+
+            <!-- jumbotron -->
+            <div class="jumbotron">
+                <div class="row jst_ctr w_jumbo">
+
+                    <div v-for="(link , i) in jumbo.navJumbo" class="col-3">
+
+                        <img :src="link.image" class="image" alt="">
+
+                        <div class="card">
+                            <h4 class="ms">link.text </h4>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
     </main>
 
     <footer>
-        @include('partial.footer');
+        @include('partials.footer')
     </footer>
 
 
