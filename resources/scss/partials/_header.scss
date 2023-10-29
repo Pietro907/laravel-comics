@@ -10,6 +10,7 @@ header {
 
 .container_header {
     max-width: 1920px;
+    margin: 0.5rem 0;
 }
 
 
@@ -37,7 +38,7 @@ header {
 
 a.active:hover {
     color: #0282f9;
-    padding-bottom: 1rem;
+    padding-bottom: 1.7rem;
     border-bottom: 5px solid #0282f9;
 }
 

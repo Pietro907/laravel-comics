@@ -1,4 +1,4 @@
-
+<!-- 
 
 
 
@@ -96,47 +96,4 @@
         color: #ffffff;
     }
 
-    .image {
-        width: 40px;
-        height: 40px;
-        aspect-ratio: 1 / 1;
-        object-fit: contain;
-    }
-
-    /* space */
-
-    .ms {
-        margin-left: 0.5rem;
-    }
-
-    .card {
-
-        width: 100%;
-    }
-
-    /* color */
-
-    .bg_black {
-        background-color: black;
-    }
-
-    /* content */
-    .col-2 {
-        color: #ffffff;
-        padding: 0.5rem 0.5rem;
-        margin: 0 2px;
-    }
-
-    .card>.img_book {
-        width: 150px;
-        height: 180px;
-        object-fit: cover;
-        object-position: top;
-
-
-    }
-
-    .card {
-        width: 150px;
-    }
-</style>
+</style> -->

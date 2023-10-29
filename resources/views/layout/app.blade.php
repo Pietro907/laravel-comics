@@ -97,14 +97,19 @@ $arrayBooksTitles = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '1
             <!-- Content goes here -->
             <div class="container_content">
 
-                <div class="row">
+                <div class="row r_series_books">
 
                     <!-- mian content fumetti -->
-                    @foreach ($arrayBooksTitles as $book)
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="https://picsum.photos/200/300" alt="">
-                            <h5>{{$book}}</h5>
+                    @foreach ($products as $book => $info)
+                    <div class="col-2 col_books">
+                        <div class="card card_book">
+                            <h5>{{$info['title']}}</h5>
+                            <img src="{{$info['thumb']}}" alt="">
+                            <!-- <p>{{$info['description']}}</p> -->
+                            <!-- <p>{{$info['price']}}</p>
+                            <p>{{$info['series']}}</p>
+                            <p>{{$info['sale_date']}}</p>
+                            <p>{{$info['type']}}</p> -->
                         </div>
                     </div>
                     @endforeach
