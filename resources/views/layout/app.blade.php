@@ -103,8 +103,8 @@ $arrayBooksTitles = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '1
                     @foreach ($products as $book => $info)
                     <div class="col-2 col_books">
                         <div class="card card_book">
-                            <h5>{{$info['title']}}</h5>
                             <img src="{{$info['thumb']}}" alt="">
+                            <h5>{{$info['title']}}</h5>
                             <!-- <p>{{$info['description']}}</p> -->
                             <!-- <p>{{$info['price']}}</p>
                             <p>{{$info['series']}}</p>
@@ -122,10 +122,10 @@ $arrayBooksTitles = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '1
 
             <div class="container_foot">
 
-                <div class="row jst_btwn">
+                <div class="row">
 
                     <!-- Button load more -->
-                    <div class="col none_bg_img jst_ctr">
+                    <div class="col">
 
                         <div class="sing_up">
 
@@ -141,19 +141,70 @@ $arrayBooksTitles = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '1
 
         <!-- Books loop -->
         <section>
+            <div class="container_icon_shop">
+                <div class="row img_book">
 
-            <div class="col-2">
+                    <div class="col-2">
+                        
+                        <div class="card">
+                            <img src="{{vite::asset('resources/img/buy-comics-digital-comics.png')}}" alt="title">
+                            <div class="text">
 
-                <div class="card">
-                    <img class="img_book" :src="image" :alt="title">
+                                <h6>DIGITAL COMICS</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-2">
+                        
+                        <div class="card">
+                            <img src="{{vite::asset('resources/img/buy-comics-merchandise.png')}}" alt="title">
+                            <div class="text">
 
-                    <h6>title </h6>
+                                <h6>DC MERCHANDISE</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-2">
+                        
+                        <div class="card">
+                            <img src="{{vite::asset('resources/img/buy-comics-subscriptions.png')}}" alt="title">
+                            <div class="text">
+
+                                <h6>SUBSCRIBE</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-2">
+                        
+                        <div class="card">
+                            <img src="{{vite::asset('resources/img/buy-comics-shop-locator.png')}}" alt="title">
+                            <div class="text">
+
+                                <h6>COMIC SHOP LOCATOR</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-2">
+                        
+                        <div class="card">
+                            <img src="{{vite::asset('resources/img/buy-dc-power-visa.svg')}}" alt="title">
+                            <div class="text">
+
+                                <h6>DC POWER VISA</h6>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
                 </div>
-
             </div>
-
-        </section>
-
+            </section>
+            
         <section id="jumbo">
 
             <!-- jumbotron -->
